@@ -1,0 +1,66 @@
+{
+  "name": "api-airport",
+  "version": "1.0.0",
+  "description": "simple api for airport (one page application)",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrodoTheTrue/api-airport.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Fedor Isakov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FrodoTheTrue/api-airport/issues"
+  },
+  "homepage": "https://github.com/FrodoTheTrue/api-airport#readme",
+  "scripts": {
+    "clean": "rimraf node_modules/",
+    "build": "webpack",
+    "initdb": "node initdb && node gendb",
+    "dev": "webpack --config webpack.config.js && npm start"
+    "start": "NODE_ENV=development node app.js",
+    "test": "mocha --recursive tests/"
+  },
+  "dependencies": {
+    "body-parser": "1.15.0",
+    "express": "4.13.4",
+    "file-loader": "^0.8.5",
+    "hbs": "4.0.0",
+    "morgan": "1.7.0",
+    "react": "0.14.7",
+    "react-dom": "0.14.7",
+    "react-redux": "4.4.1",
+    "redux": "3.3.1",
+    "sqlite3": "^3.1.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "6.3.3",
+    "babel-core": "6.7.4",
+    "babel-loader": "6.2.4",
+    "babel-preset-es2015": "6.6.0",
+    "babel-preset-react": "6.5.0",
+    "chai": "3.5.0",
+    "css-loader": "0.23.1",
+    "cssnano": "3.5.2",
+    "eslint": "2.3.0",
+    "eslint-config-xo": "0.12.0",
+    "eslint-plugin-react": "4.2.3",
+    "extract-text-webpack-plugin": "1.0.1"
+    "mocha": "2.4.5",
+    "npm-run-all": "1.5.2",
+    "postcss-loader": "0.8.1",
+    "rimraf": "2.5.2",
+    "style-loader": "0.13.0",
+    "stylelint": "5.0.0",
+    "stylelint-config-standard": "4.0.0",
+    "supertest": "1.2.0",
+    "surge": "0.17.7",
+    "webpack": "1.12.14"
+  },
+  "engines": {
+    "node": "4.4.0"
+  }
+}
