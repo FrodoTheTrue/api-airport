@@ -20,7 +20,7 @@
     "clean": "rimraf node_modules/",
     "build": "webpack",
     "initdb": "node initdb && node gendb",
-    "dev": "webpack --config webpack.config.js && npm start"
+    "dev": "webpack --config webpack.config.js && npm start",
     "start": "NODE_ENV=development node app.js",
     "test": "mocha --recursive tests/"
   },
