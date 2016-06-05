@@ -6,6 +6,6 @@ var inlineStyle = {
 
 export default () => (
     <div className="container" style = {inlineStyle}>
-        <h1>Airport table</h1>
+        <h1>Airport table admin</h1>
     </div>
 );

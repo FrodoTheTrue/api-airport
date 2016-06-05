@@ -17,6 +17,7 @@ class Flight {
         if (queryString != "") {
             queryString = " WHERE " + queryString;
         }
+        console.log(queryString);
         db.all('SELECT * FROM flights' + queryString, function(err, row) {
             if(err !== null) {
                 callback(true, null);

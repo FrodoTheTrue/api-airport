@@ -7,7 +7,8 @@ const webpack = require('webpack');
 module.exports = {
         context: path.join(__dirname, 'server/views'),
         entry: {
-            main: './main.js'
+            main: './main/main.js',
+            admin: './admin/admin.js'
         },
         devtool: 'source-map',
         output: {

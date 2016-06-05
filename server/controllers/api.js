@@ -1,9 +1,9 @@
 const Flight = require('../models/flight');
 exports.flightsList = (req, res) => {
     // список всех flights
-    Flight.getAllFlights(req.query, function(err, flights) {
+    Flight.getAllFlights(req.query, function(error, flights) {
         res.json({
-            err,
+            error,
             flights
         });
     });
@@ -25,16 +25,16 @@ exports.flightsPut = (req, res) => {
     });
 };
 exports.flightsEdit = (req, res) => {
-    Flight.updateFlight(req.params.flight_id, req.body, function (err) {
+    Flight.updateFlight(req.params.flight_id, req.body, function (error) {
         res.json({
-            err
+            error
         });
     });
 };
 exports.flightsDelete = (req, res) => {
-    Flight.deleteFlight(req.params.flight_id, function (err) {
+    Flight.deleteFlight(req.params.flight_id, function (error) {
         res.json({
-            err
+            error
         });
     });
 };

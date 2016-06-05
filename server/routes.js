@@ -4,7 +4,8 @@ const api = require('./controllers/api');
 const pages = require('./controllers/pages');
 
 module.exports = function (app) {
-    app.get('/', pages.index);
+    app.get('/', pages.index),
+    app.get('/admin', pages.admin),
 
     // base api urls
     app.get('/api/flights', api.flightsList), // get flights
