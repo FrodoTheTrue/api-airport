@@ -1,11 +1,20 @@
 # API Airport
 Simple API for airport
 
+Demo site: http://api-airport.herokuapp.com/
+
 With using:
   - node/express
   - react.js + redux
   - bootstrap
   - sqlite3
+  
+Commands for local server:
+```
+npm i // install dependencies
+npm run dev // build and start server
+npm run initdb // create db(sqlite3 file) and add test row
+```
 
 ## API documentation
 Model, using for flights:
